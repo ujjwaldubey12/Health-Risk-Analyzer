@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>HealthyHeart</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    form {
+      margin: 0 auto; /* center the form on the screen */
+      width: 50%; /* set the width of the form */
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    h1 {
+      text-align: center;
+    }
+    .italic-placeholder::placeholder {
+      font-style: italic;
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="heart.jpg" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="color: black;">HealthyHeart</h1>
+    <h5 class="w3-hide-large" style="color: black;" style="white-space:nowrap">HealthyHeart</h5>
+    <h3 class="w3-hide-medium w3-hide-small" style="color: black;">Know your heart, protect your future!</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="Diabetes.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Liver.html" class="w3-bar-item w3-button">Liver</a>
+    <a href="Kidney.html" class="w3-bar-item w3-button">Kidney</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+    <a href="Diabetes.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Liver.html" class="w3-bar-item w3-button">Liver</a>
+    <a href="Kidney.html" class="w3-bar-item w3-button">Kidney</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+  <!-- <img src="ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
+  <img src="ocean.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="ocean.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="ocean.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="ocean.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500"> -->
+  <fieldset>
+    <h1>Please fill your details below</h1><br>
+  <form method="POST" action="/heart">
+    <label>Age:</label>
+    <input type="text" name="Pregnancies" required placeholder="Enter your age here" class="italic-placeholder"><br><br>
+
+    <!-- <label>Gender:</label>
+    <input type="radio" name="Gender" value="Male" required>Male
+    <input type="radio" name="Gender" value="Female" required>Female <br><br> -->
+
+    <!-- <label>Chest Pain Type:</label>
+      <select name="Chest Pain Type" id="Chest Pain Type" required>
+      <option value="" disabled selected>Select Glucose Level</option>
+      <option value="TA">TA: Typical Angina</option>
+      <option value="ATA">ATA: Atypical Angina</option>
+      <option value="NAP">NAP: Non-Anginal Pain</option>
+      <option value="ASY">ASY: Asymptomatic</option>
+      </select> <br><br> -->
+
+    <label>Resting Blood Pressure:</label>
+    <input type="text" name="Skin" required placeholder="Enter your Resting BP Value here" class="italic-placeholder"><br><br>
+
+    <label>Cholestrol:</label>
+    <input type="text" name="Insulin" required placeholder="Enter the Serum Cholestrol Value here" class="italic-placeholder"><br><br>
+
+    <label>Fasting Blood Sugar:</label>
+    <input type="text" name="BMI" required placeholder="Enter the Fasting Blood Sugar Value here" class="italic-placeholder"><br><br>
+
+    <!-- <label>Resting Electrocardiogram Result:</label>
+      <select name="Resting Electrocardiogram Result" id="Resting Electrocardiogram Result" required>
+      <option value="" disabled selected>Select Resting Electrocardiogram Result</option>
+      <option value="TA">Normal</option>
+      <option value="ATA">ST: ST-T wave abnormality(T wave inversions and/or ST elevation or depr. > 0.05 mV)</option>
+      <option value="NAP">LVH: showing probable or definite left ventricular hypertrophy by Estes' criteria]</option>
+      </select> <br><br> -->
+
+    <label>Maximum Heart Rate:</label>
+    <input type="text" name="Pedigree" required placeholder="Enter maximum heart rate Value here" class="italic-placeholder"><br><br>
+
+    <!-- <label>Exercise Induced Angina:</label>
+    <input type="radio" name="Exercise Induced Angina" value="Male" required>Yes
+    <input type="radio" name="Exercise Induced Angina" value="Female" required>No <br><br> -->
+
+    <label>Old Peak:</label>
+    <input type="text" name="Pedigree" required placeholder="Enter Old Peak Value here" class="italic-placeholder"><br><br>
+
+    <!-- <label>ST_Slope:</label>
+      <select name="ST_Slope" id="ST_Slope" required>
+      <option value="" disabled selected>Select ST Slope</option>
+      <option value="TA">Up: upsloping</option>
+      <option value="ATA">Flat: flat</option>
+      <option value="NAP">Down: downsloping</option>
+      </select> <br><br> -->
+
+    <button type="submit" class="w3-button w3-block w3-dark-grey">Submit</button>
+  </form>
+</fieldset>
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact Us</h3>
+    <hr>
+    <p class="w3-center">Need help? Contact us and we'll get in touch with you as soon as possible.</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p><i>Disclaimer: This tool is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your healthcare provider with any questions you may have regarding your health.</i></p>
+    <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>NephroHealth</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    form {
+      margin: 0 auto; /* center the form on the screen */
+      width: 50%; /* set the width of the form */
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    h1 {
+      text-align: center;
+    }
+    .italic-placeholder::placeholder {
+      font-style: italic;
+    }
+  </style>
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-center" style="max-width:1500px">
+  <img class="w3-image" src="Kidney.png" alt="Me" width="1500" height="600">
+  <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
+    <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge" style="color: black;">NephroHealth</h1>
+    <h5 class="w3-hide-large" style="color: black;" style="white-space:nowrap">NephroHealth</h5>
+    <h3 class="w3-hide-medium w3-hide-small" style="color: black;">Your kidney health matters, let us help you predict it!</h3>
+  </div>
+  
+  <!-- Navbar (placed at the bottom of the header image) -->
+  <div class="w3-bar w3-light-grey w3-round w3-display-bottommiddle w3-hide-small" style="bottom:-16px">
+    <a href="Diabetes.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Liver.html" class="w3-bar-item w3-button">Liver</a>
+    <a href="Heart.html" class="w3-bar-item w3-button">Heart</a>
+  </div>
+</header>
+
+<!-- Navbar on small screens -->
+<div class="w3-center w3-light-grey w3-padding-16 w3-hide-large w3-hide-medium">
+<div class="w3-bar w3-light-grey">
+    <a href="Diabetes.html" class="w3-bar-item w3-button">Home</a>
+    <a href="Liver.html" class="w3-bar-item w3-button">Liver</a>
+    <a href="Heart.html" class="w3-bar-item w3-button">Heart</a>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+
+  <!-- Images (Portfolio) -->
+  <!-- <img src="ocean.jpg" alt="Ocean" class="w3-image" width="1000" height="500">
+  <img src="ocean.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="ocean.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="ocean.jpg" alt="Skies" class="w3-image w3-margin-top" width="1000" height="500">
+  <img src="ocean.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500"> -->
+  <fieldset>
+    <h1>Please fill your details below</h1><br>
+  <form method="POST" action="/kidney">
+    <label for="age">Age:</label>
+    <input type="text" id="age" name="age" required><br><br>
+  
+    <label for="bp">Blood Pressure:</label>
+    <input type="text" id="bp" name="bp" required><br><br>
+    
+    <label for="sg">Specific Gravity:</label>
+    <input type="text" id="sg" name="sg" required><br><br>
+    
+    <label for="al">Albumin:</label>
+    <select id="al" name="al">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select><br><br>
+    
+    <label for="su">Sugar:</label> <select id="su" name="su">
+      <option value="0">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select><br><br>
+    
+    <!-- <label for="rbc">Red Blood Cells:</label><br>
+    <input type="radio" id="rbc_normal" name="rbc" value="normal">Normal
+    <input type="radio" id="rbc_abnormal" name="rbc" value="abnormal">Abnormal<br><br> -->
+    
+    <!-- <label for="pc">Pus Cell:</label><br>
+    <input type="radio" id="pc_normal" name="pc" value="normal">Normal
+    <input type="radio" id="pc_abnormal" name="pc" value="abnormal">Abnormal<br><br>
+    
+    <label for="pcc">Pus Cell Clumps:</label><br>
+    <input type="radio" id="pcc_present" name="pcc" value="present">Present
+    <input type="radio" id="pcc_not_present" name="pcc" value="not_present">Not Present<br><br>
+    
+    <label for="ba">Bacteria:</label><br>
+    <input type="radio" id="ba_present" name="ba" value="present"> Present
+    <input type="radio" id="ba_not_present" name="ba" value="not_present"> Not Present <br><br> -->
+    
+    
+    <label for="bgr">Blood Glucose Random:</label>
+    <input type="text" id="bgr" name="bgr" required><br><br>
+    
+    <label for="bu">Blood Urea:</label>
+    <input type="text" id="bu" name="bu" required><br><br>
+
+    <label for="serum_creatinine">Serum Creatinine:</label><br>
+    <input type="number" name="serum_creatinine" required placeholder="Enter Serum Creatinine Level"><br><br>
+
+    <label for="sodium">Sodium:</label><br>
+    <input type="number" name="sodium" required placeholder="Enter Sodium Level"><br><br>
+
+    <label for="potassium">Potassium:</label><br>
+    <input type="number" name="potassium" required placeholder="Enter Potassium Level"><br><br>
+
+    <label for="hemoglobin">Hemoglobin:</label><br>
+    <input type="number" name="hemoglobin" required placeholder="Enter Hemoglobin Level"><br><br>
+
+    <label for="packed_cell_volume">Packed Cell Volume:</label><br>
+    <input type="number" name="packed_cell_volume" required placeholder="Enter Packed Cell Volume"><br><br>
+
+    <label for="white_blood_cell_count">White Blood Cell Count:</label><br>
+    <input type="number" name="white_blood_cell_count" required placeholder="Enter White Blood Cell Count"><br><br>
+
+    <label for="red_blood_cell_count">Red Blood Cell Count:</label><br>
+    <input type="number" name="red_blood_cell_count" required placeholder="Enter Red Blood Cell Count"><br><br>
+
+    <!-- <label for="hypertension">Hypertension:</label><br>
+    <input type="radio" name="hypertension" value="yes" required>Yes
+    <input type="radio" name="hypertension" value="no" required>No<br><br>
+
+    <label for="diabetes_mellitus">Diabetes Mellitus:</label><br>
+    <input type="radio" name="diabetes_mellitus" value="yes" required>Yes
+    <input type="radio" name="diabetes_mellitus" value="no" required>No<br><br>
+
+    <label for="coronary_artery_disease">Coronary Artery Disease:</label><br>
+    <input type="radio" name="coronary_artery_disease" value="yes" required>Yes
+    <input type="radio" name="coronary_artery_disease" value="no" required>No<br><br>
+
+    <label for="appetite">Appetite:</label><br>
+    <select name="appetite" required>
+      <option value="">Select an option</option>
+      <option value="poor">Poor</option>
+      <option value="good">Good</option>
+    </select><br><br>
+
+    <label for="pedal_edema">Pedal Edema:</label><br>
+    <select name="pedal_edema" required>
+      <option value="">Select an option</option>
+      <option value="yes">Yes</option>
+      <option value="no">No</option>
+    </select><br><br> -->
+
+
+    
+    <button type="submit" class="w3-button w3-block w3-dark-grey">Submit</button>
+  </form>
+</fieldset>
+  <!-- Contact -->
+  <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
+    <h3 class="w3-center">Contact Us</h3>
+    <hr>
+    <p class="w3-center">Need help? Contact us and we'll get in touch with you as soon as possible.</p>
+
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" required name="Name">
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" required name="Email">
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" required name="Message">
+      </div>
+      <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
+    </form><br>
+    <p><i>Disclaimer: This tool is not a substitute for professional medical advice, diagnosis, or treatment. Always consult your healthcare provider with any questions you may have regarding your health.</i></p>
+    <!--<p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>-->
+
+  </div>
+
+<!-- End page content -->
+</div>
+
+</body>
+</html>
