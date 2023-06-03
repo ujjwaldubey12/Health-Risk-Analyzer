@@ -1,6 +1,9 @@
 # Health Risk Analyzer
 Health Risk Analyzer is an ML-powered platform designed to provide accurate predictions for diabetes, heart disease, liver, &amp; kidney health. Leveraging advanced algorithms, our intuitive webpages enable users to assess their health risks &amp; make informed decisions. Experience the power of AI in healthcare prediction &amp; take control of your well-being.
 
+https://github.com/ujjwaldubey12/Health-Risk-Analyzer/assets/135392087/8e1273ad-e0ef-41ff-99d3-45d50cb9229c
+    
+
 Our web application is a useful tool for medical professionals and patients alike. With four separate web pages (DiabeteXpert, LiverCheck, HealthyHeart, NephroHealth), each dedicated to predicting a specific disease, it covers a range of health concerns.
 
 ## Features
